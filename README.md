@@ -1,12 +1,14 @@
 # 📘 Лабораторные работы по C++
 
-Данный репозиторий содержит 4 лабораторные работы по языку программирования C++, каждая из которых размещена в отдельной директории:
+Данный репозиторий содержит 4 лабораторные и курсовую работу по языку программирования C++, каждая из которых размещена в отдельной директории:
 
 ```
 LizaLabs/1Lab/
 LizaLabs/2Lab/
 LizaLabs/3Lab/
 LizaLabs/4Lab/
+LizaLabs/CoursePaper/Graph
+LizaLabs/CoursePaper/Plane
 ```
 
 В каждой папке находятся:
@@ -29,14 +31,9 @@ LizaLabs/4Lab/
 
 ```bash
 cd Путь/к/репозиторию/1Lab
+cd Путь/к/репозиторию/CoursePaper/Plane
+cd Путь/к/репозиторию/CoursePaper/Graph
 ```
-
-Например:
-
-```bash
-cd ~/Projects/CppLabs/1Lab
-```
-
 ---
 
 ## ⚙️ 2. Компиляция программы
@@ -50,6 +47,8 @@ g++ 1lab.cpp -o 1lab
 g++ 2lab.cpp -o 2lab
 g++ 3lab.cpp -o 3lab
 g++ 4lab.cpp -o 4lab
+g++ 4lab.cpp -o 4lab
+cmake --build build 
 ```
 
 ---
@@ -68,6 +67,8 @@ g++ 4lab.cpp -o 4lab
 ./2lab
 ./3lab
 ./4lab
+./build/GraphApp
+./build/PlaneApp
 ```
 
 ---
@@ -93,6 +94,38 @@ g++ 4lab.cpp -o 4lab
  ├── json.hpp
  ├── result.json
  └── Отчёт 4 Практическая.docx
+
+CoursePaper/
+    ├── Graph/
+          ├── CMakeLists.txt
+          ├── assets/
+                ├── arial.ttf
+          ├── build/
+          ├── include/
+                 ├── CoordinateSystem.hpp
+                 ├── FunctionPlot.hpp
+                 └── GraphApp.hpp
+          └── src/
+               ├── CoordinateSystem.cpp
+               ├── FunctionPlot.cpp
+               ├── main.cpp
+               └── GraphApp.cpp
+    └── Plane/
+          ├── CMakeLists.txt
+          ├── assets/
+                ├── arial.ttf
+                └── background.png
+          ├── build/
+          ├── include/
+                 ├── Plane.hpp
+                 ├── Scene.hpp
+                 └── PlaneApp.hpp
+          └── src/
+               ├── Scene.cpp
+               ├── Plane.cpp
+               ├── main.cpp
+               └── PlaneApp.cpp
+
 ```
 
 ---
