@@ -1,0 +1,3 @@
+/Users/baben/Desktop/LizaLabs/CoursePaper/Plane/build/CMakeFiles/PlaneApp.dir
+/Users/baben/Desktop/LizaLabs/CoursePaper/Plane/build/CMakeFiles/edit_cache.dir
+/Users/baben/Desktop/LizaLabs/CoursePaper/Plane/build/CMakeFiles/rebuild_cache.dir
